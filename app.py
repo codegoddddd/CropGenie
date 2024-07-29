@@ -40,4 +40,4 @@ with st.form(key='input_form'):
         st.subheader('Recommendation')
         st.write(result)
 
-    st.write("© 2024 CropGenie. All rights reserved.")
+st.write("© 2024 CropGenie. All rights reserved.")
