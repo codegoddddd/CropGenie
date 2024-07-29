@@ -20,5 +20,5 @@ click==8.1.7
 Flask==3.0.3
 prometheus_client==0.20.0
 
-# Miscellaneous
-packaging==24.1
+# Loosen packaging version constraint
+packaging>=14.1,<24
