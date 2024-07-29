@@ -9,7 +9,7 @@ model = pickle.load(open('model/model.pkl', 'rb'))
 sc = pickle.load(open('model/standscaler.pkl', 'rb'))
 ms = pickle.load(open('model/minmaxscaler.pkl', 'rb'))
 
-st.title('Crop Recommendation System 🌱')
+st.title('CropGenie 🌱')
 
 with st.form(key='input_form'):
     st.header('Enter Crop Features')
