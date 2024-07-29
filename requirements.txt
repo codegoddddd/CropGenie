@@ -75,3 +75,4 @@ Pygments==2.18.0
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7
 pytz==2024.1
+streamlit==1.23.0
