@@ -10,34 +10,6 @@ sc = pickle.load(open('model/standscaler.pkl', 'rb'))
 ms = pickle.load(open('model/minmaxscaler.pkl', 'rb'))
 
 st.title('CropGenie 🌱')
-
-# Create a theme toggle button
-theme = st.radio("Select Theme", ["Light", "Dark"], index=0, horizontal=True)
-
-# Define custom styles for light and dark themes
-if theme == "Light":
-    primary_color = "#ffffff"  # White background
-    text_color = "#000000"     # Black text
-else:
-    primary_color = "#333333"  # Dark background
-    text_color = "#ffffff"     # White text
-
-# Inject custom CSS styles
-st.markdown(
-    f"""
-    <style>
-    body {{
-        background-color: {primary_color};
-        color: {text_color};
-    }}
-    .stButton>button {{
-        background-color: {primary_color};
-        color: {text_color};
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
     
 
 with st.form(key='input_form'):
