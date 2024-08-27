@@ -11,6 +11,33 @@ ms = pickle.load(open('model/minmaxscaler.pkl', 'rb'))
 
 st.title('CropGenie 🌱')
 
+# Light and Dark Theme Toggle
+theme = st.radio("Select Theme", ["Light", "Dark"], index=0, horizontal=True)
+# Apply the selected theme
+if theme == "Light":
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
+else:
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
+    
+
 with st.form(key='input_form'):
     st.header('Enter Crop Features')
 
