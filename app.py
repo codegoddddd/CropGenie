@@ -15,13 +15,13 @@ st.title('CropGenie 🌱')
 with st.form(key='input_form'):
     st.header('Enter Crop Features')
 
-    nitrogen = st.number_input('Nitrogen', min_value=0.0, step=0.01)
-    phosphorus = st.number_input('Phosphorus', min_value=0.0, step=0.01)
-    potassium = st.number_input('Potassium', min_value=0.0, step=0.01)
-    temperature = st.number_input('Temperature (°C)', min_value=0.0, step=0.01)
-    humidity = st.number_input('Humidity (%)', min_value=0.0, step=0.01)
-    ph = st.number_input('pH', min_value=0.0, step=0.01)
-    rainfall = st.number_input('Rainfall (mm)', min_value=0.0, step=0.01)
+    nitrogen = st.number_input('Nitrogen', min_value=0.0, step=1.0)
+    phosphorus = st.number_input('Phosphorus', min_value=0.0, step=1.0)
+    potassium = st.number_input('Potassium', min_value=0.0, step=1.0)
+    temperature = st.number_input('Temperature (°C)', min_value=0.0, step=1.0)
+    humidity = st.number_input('Humidity (%)', min_value=0.0, step=1.0)
+    ph = st.number_input('pH', min_value=0.0, step=1.0)
+    rainfall = st.number_input('Rainfall (mm)', min_value=0.0, step=10.0)
 
     submit_button = st.form_submit_button('Get Recommendation')
 
